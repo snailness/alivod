@@ -6,9 +6,14 @@ aliyun 视频点播 SDK  alivod
     go get github.com/snailness/alivod
 
 ## Useage
-    //init aliyun access_key. you need init only one time.
+
+
+    //1. init aliyun access_key. you need init only one time.
     alivod.InitConfig("access_key_id", "access_key_secret") 
-    // eq. GetVideoInfo
+
+
+
+    //2. eq. GetVideoInfo
     query_url := alivod.GetAlivodVideoInfoUrl(alivod.GetVideoInfoRequest{
         Action: alivod.ALIVOD_API_GET_VIDEO_INFO,
         VideoId: vid,
